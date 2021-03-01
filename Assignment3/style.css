@@ -1,0 +1,15 @@
+.title {
+    font-weight: bold;
+}
+
+a[class="listing"] {
+    font-style: italic;
+    font-size: small;
+}
+.listing:hover {
+    color: #c28830
+}
+
+body {
+    background-color: aquamarine;
+}
