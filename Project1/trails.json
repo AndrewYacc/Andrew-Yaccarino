@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Elroy-Sparta State Trail",
+        "image": "https://www.travelwisconsin.com/uploads/blog/b9/b9e46509-e308-46ef-9fb7-e96d89cd809c-sparta.jpg?preset=article-details-header",
+        "img-source": "https://www.travelwisconsin.com/article/multi-use-bike-trails/article/linear-bike-trails/the-elroy-sparta-state-trail-americas-first-rails-to-trails-project",
+        "link": "https://dnr.wisconsin.gov/topic/parks/elroysparta",
+        "zones": [
+            "042",
+            "043"
+        ]
+    },
+    {
+        "name": "Oak Leaf Trail",
+        "zones": [
+            "066"
+        ]
+    },
+    {
+        "name": "Milwaukee-Racine-Kenosha Tail",
+        "zones": [
+            "066",
+            "071",
+            "072"
+        ]
+    }
+]
