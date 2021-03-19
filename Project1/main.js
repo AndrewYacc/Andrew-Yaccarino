@@ -1,5 +1,6 @@
 let normalized_zones = [];
 let displayed_alerts = [];
+let id_target = 0;
 
 window.onload = function() {
 	let parent = document.getElementById('trails');
@@ -19,11 +20,15 @@ function createTable(data, parent, columns) {
 		for (let j = 0; j < columns && number_to_display > 0; j++) {
 			let col = row.insertCell();
 			
-			addTrail(data[columns * i + j], col);
+			let cell_data = data[columns * i + j];
+			
+			col.setAttribute('id',cell_data.id);
+			addTrail(cell_data, col);
 			number_to_display--;
 		}
 	}
 }
+
 
 function normalizeZones() {
 	for (let trail of trails) {
@@ -37,8 +42,28 @@ function normalizeZones() {
 
 function getWeatherForTrails() {
 	for (let zone of normalized_zones) {
-		loadJSON('https://api.weather.gov/alerts/active/zone/WIZ'+zone,warnings);
+		loadJSON('https://api.weather.gov/alerts/active/zone/WIZ'+zone, warnings);
+		//loadJSON('https://api.weather.gov/zones/forecast/WIZ'+zone+'/observations', observation); // add later?
 	}
+}
+
+function observation(data) {
+	/**
+     *  <dialog>
+     *    <h1 centered red bold> [headline] </h1>
+     *    <p centered> [description] </p>
+     *  </dialog>
+     */
+	id_target++;
+	let parent = document.getElementById(id_target);
+	if (typeof data.features[0] == 'undefined') return;
+	console.log(data);
+	let averageTemp = 0;
+	for (let data_points of data.features) {
+		averageTemp += data_points.properties.temperature.value || 0;
+	}
+	averageTemp /= data.features.length;
+	console.log(averageTemp);
 }
 
 function warnings(data) {
