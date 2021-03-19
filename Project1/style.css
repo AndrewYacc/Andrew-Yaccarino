@@ -2,6 +2,7 @@ img {
 	height: auto;
 	width: 300px;
 	padding: 0px;
+	border-radius: 5px;
 }
 
 *[center] {
@@ -21,4 +22,3 @@ ul {
 h1,h2,h3,h4 {
 	font-family: 'Merriweather', serif;
 }
-
