@@ -1,6 +1,7 @@
 // I'm having a hard time importing json files
 const trails = [
     {
+		id: 1,
         name: "Elroy-Sparta State Trail",
         img: "https://www.travelwisconsin.com/uploads/blog/b9/b9e46509-e308-46ef-9fb7-e96d89cd809c-sparta.jpg?preset=article-details-header",
 		img_source_title: "The Elroy-Sparta State Trail: America's First Rails-to-Trails Project",
@@ -12,8 +13,9 @@ const trails = [
         ]
     },
     {
+		id: 2,
         name: "Oak Leaf Trail",
-		img: "https://www.gannett-cdn.com/-mm-/68444ddc0a3d27a4e9445056c9a7839077492531/c=0-82-1996-1210/local/-/media/2016/09/06/WisPub/South/636087681294232662-CNI-OC-BIKES02-0925-CA-M-14377361.JPG?width=1996&height=1128&fit=crop&format=pjpg&auto=webp",
+		img: "https://www.gannett-cdn.com/-mm-/68444ddac0a3d27a4e9445056c9a7839077492531/c=0-82-1996-1210/local/-/media/2016/09/06/WisPub/South/636087681294232662-CNI-OC-BIKES02-0925-CA-M-14377361.JPG?width=1996&height=1128&fit=crop&format=pjpg&auto=webp",
 		img_source_title: "Construction begins on Oak Leaf Trail extension in Franklin",
 		img_source: "https://www.jsonline.com/story/news/local/franklin/2017/08/10/construction-begins-oak-leaf-trail-extension-franklin/553930001/",
 		link: "https://county.milwaukee.gov/EN/Parks/Explore/Trails/Oak-Leaf-Trail",
@@ -22,6 +24,7 @@ const trails = [
         ]
     },
     {
+		id: 3,
         name: "Milwaukee-Racine-Kenosha Trail",
 		img: "https://greaterracinecounty.com/wp-content/uploads/2019/08/seven_waters_3.jpg",
 		img_source_title: "4 Amazing Racine County Bike Trails",
@@ -34,6 +37,7 @@ const trails = [
         ]
     },
 	{
+		id: 4,
 		name: "Sugar River State Trail",
 		img: "https://i0.wp.com/wisconsinbikefed.org/wp-content/uploads/2020/06/SugarRiver-01002-2.jpg?resize=1300%2C750&ssl=1",
 		img_source_title: "ATVs Proposed for the Sugar River and Badger State Trails",
