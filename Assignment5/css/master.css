@@ -1,0 +1,20 @@
+img {
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+}
+
+#credits {
+    font-style: italic;
+}
+
+#header-image {
+    height: auto;
+    width: 100%;
+    border-radius: 0px;
+}
